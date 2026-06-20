@@ -1,0 +1,26 @@
+# Environment / secrets — never commit API keys
+.env
+.env.*
+!.env.example
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info/
+app.egg-info/
+
+# Virtual environments
+.venv/
+
+# Testing
+.pytest_cache/
+
+# uv
+uv.lock

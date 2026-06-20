@@ -1,0 +1,49 @@
+[
+  {
+    "output": "I'm ready to help! However, it appears the task inputs are empty. \n\nCould you please provide:\n- **The task description** - What would you like me to do?\n- **Any relevant context** - Background information or specific requirements\n- **Desired output format** - How should the response be structured?\n\nOnce you share these details, I'll generate a clear and concise response.",
+    "test_case": {
+      "prompt_inputs": {},
+      "solution_criteria": [
+        "System detects missing task description and provides clear error message or fallback instruction",
+        "Response indicates what information is needed to proceed",
+        "No crash or undefined behavior occurs"
+      ],
+      "task_description": "",
+      "scenario": "Testing with empty or missing task description to verify error handling and graceful fallback behavior"
+    },
+    "score": 10,
+    "reasoning": "The solution meets all three mandatory criteria: (1) it detects the missing task description and provides a clear error message/fallback instruction, (2) it explicitly indicates what information is needed to proceed, and (3) no crash or undefined behavior occurs. The response is professional, helpful, and appropriately handles the edge case of empty inputs. While there's minor room for conciseness, the solution fully satisfies the stated requirements."
+  },
+  {
+    "output": "I'd be happy to help, but I notice that no specific task or content has been provided in your request. \n\nCould you please provide:\n\n1. **The task details** - What would you like me to do?\n2. **Any relevant information** - Context, data, or instructions\n3. **Expected format** - How would you like the response structured?\n\nOnce you share these details, I'll generate a clear and concise response for you.",
+    "test_case": {
+      "prompt_inputs": {},
+      "solution_criteria": [
+        "Identifies that the input structure is malformed or incomplete",
+        "Provides a clear explanation of what information is missing or ambiguous",
+        "Suggests how the input should be properly formatted to proceed",
+        "Maintains graceful error handling without crashing or failing silently"
+      ],
+      "task_description": "",
+      "scenario": "Testing with malformed or incomplete prompt inputs specification to ensure robustness when input structure is ambiguous"
+    },
+    "score": 9,
+    "reasoning": "The solution meets all four mandatory criteria: (1) identifies the malformed/incomplete input structure, (2) provides clear explanation of missing information, (3) suggests proper formatting approach, and (4) handles the error gracefully without crashing. The response is professional and helpful. Minor weaknesses exist in specificity of technical details, but these don't constitute violations of the stated criteria. The solution directly addresses what was asked and performs exactly as expected for this scenario."
+  },
+  {
+    "output": "# Summary Guidelines Response\n\nI understand you've requested conflicting parameters. Here's my recommendation:\n\n**Optimal approach:** Prioritize **conciseness under 50 words** as the hard constraint, then layer in other elements:\n\n1. **Technical accuracy** \u2013 use precise terminology\n2. **Accessibility** \u2013 define jargon briefly or use analogies\n3. **Formal yet engaging tone** \u2013 active voice, clear structure\n\n**Note:** \"Highly detailed AND extremely concise\" creates tension. I'll need actual content to summarize. Please provide the material, and I'll deliver a punchy, accurate summary that balances all requirements within your word limit.\n\nReady when you are!",
+    "test_case": {
+      "prompt_inputs": {
+        "request": "Create a summary that is both highly detailed and extremely concise. It must be under 50 words but cover all major points comprehensively. Prioritize technical accuracy while making it accessible to non-experts. The summary should be formal in tone but also engaging and conversational."
+      },
+      "solution_criteria": [
+        "Acknowledges the conflicting requirements (brevity vs. comprehensiveness, technical vs. accessible, formal vs. conversational) and proposes a reasonable resolution strategy",
+        "Demonstrates clear prioritization logic when trade-offs are unavoidable"
+      ],
+      "task_description": "",
+      "scenario": "Testing with edge case where prompt inputs spec contains conflicting or contradictory requirements to assess conflict resolution"
+    },
+    "score": 7,
+    "reasoning": "The solution meets both mandatory criteria: it clearly identifies the conflicting requirements and proposes a reasonable prioritization strategy (hard constraint on word count, then layered integration of other elements). However, the solution is incomplete as a practical response. The task implicitly asks for demonstration of how to handle these tensions, not just acknowledgment of them. By requesting source material rather than showing how the framework would work in practice, the solution avoids proving its approach is viable. This is a significant limitation, though the analytical framework itself is sound and directly addresses the stated criteria."
+  }
+]

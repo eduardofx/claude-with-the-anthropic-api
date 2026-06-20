@@ -1,0 +1,65 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# uv
+mcp/.venv
+mcp/uv.lock
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+
+# Build / distribution
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Package managers
+pip-wheel-metadata/
+
+# Testing
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# Mypy / type checkers
+.mypy_cache/
+.dmypy.json
+.pyright/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Logs
+*.log
+logs/
+
+.venv/
